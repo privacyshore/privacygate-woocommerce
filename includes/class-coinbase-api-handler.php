@@ -23,7 +23,7 @@ class Coinbase_API_Handler {
 	}
 
 	/** @var string Coinbase API url. */
-	public static $api_url = 'https://api.commerce.coinbase.com/';
+	public static $api_url = 'https://api.privacygate.io/';
 
 	/** @var string Coinbase API version. */
 	public static $api_version = '2018-03-22';
