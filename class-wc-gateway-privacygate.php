@@ -61,7 +61,7 @@ class WC_Gateway_privacygate extends WC_Payment_Gateway {
 
 		add_action( 'woocommerce_update_options_payment_gateways_' . $this->id, array( $this, 'process_admin_options' ) );
 		add_filter( 'woocommerce_order_data_store_cpt_get_orders_query', array( $this, '_custom_query_var' ), 10, 2 );
-		add_action( 'woocommerce_api_wc_gateway_privacygate', array( $this, 'handle_webhook' ) );
+		add_action( 'woocommerce_api_wc_gateway_privacygate', array( $this, 'handle_webhook' ) ); // T
 	}
 
 	/**
