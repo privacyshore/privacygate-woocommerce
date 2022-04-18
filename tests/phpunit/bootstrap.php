@@ -10,7 +10,7 @@ require_once $_tests_dir . '/includes/functions.php';
 function _manually_load_plugin() {
 	$plugin_dir = dirname( dirname( dirname( dirname( __FILE__ ) ) ) ) . '/';
 	require $plugin_dir . 'woocommerce/woocommerce.php';
-	require $plugin_dir . 'coinbase-commerce/coinbase-commerce.php';
+	require $plugin_dir . 'privacygate/privacygate.php';
 }
 
 function _wc_active_plugin( $plugins ) {

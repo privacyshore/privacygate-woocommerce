@@ -1,7 +1,7 @@
-# Coinbase Commerce for WooCommerce
+# PrivacyGate for WooCommerce
 **Note: This repository is not actively maintained.**
 
-A WooCommerce payment gateway that allows your customers to pay with cryptocurrency via Coinbase Commerce
+A WooCommerce payment gateway that allows your customers to pay with cryptocurrency via PrivacyGate
 
 ## Installation
 
@@ -11,13 +11,13 @@ This plugin is available on the [WordPress.org plugin repository], and can be in
 
 #### Within your WordPress dashboard
 1. Visit ‘Plugins > Add New’
-2. Search for ‘Coinbase Commerce’
-3. Activate Coinbase Commerce from your Plugins page.
+2. Search for ‘PrivacyGate’
+3. Activate PrivacyGate from your Plugins page.
 
 #### From WordPress.org plugin repository
-1. Download Coinbase Commerce from <https://wordpress.org/plugins/coinbase-commerce/>
+1. Download PrivacyGate from <https://wordpress.org/plugins/privacygate/>
 2. Upload to your ‘/wp-content/plugins/’ directory, using your favorite method (ftp, sftp, scp, etc…)
-3. Activate Coinbase Commerce from your Plugins page.
+3. Activate PrivacyGate from your Plugins page.
 
 ### From this repository
 
@@ -29,21 +29,21 @@ Alternatively, you can move the zip file into the `wp-content/plugins` folder of
 
 You will then need to go to your WordPress administration Plugins page, and activate the plugin.
 
-## Configuring Coinbase Commerce
+## Configuring PrivacyGate
 
-You will need to set up an account on [Coinbase Commerce].
+You will need to set up an account on [PrivacyGate].
 
-Within the WordPress administration area, go to the WooCommerce > Settings > Payments page and you will see Coinbase in the table of payment gateways.
+Within the WordPress administration area, go to the WooCommerce > Settings > Payments page and you will see privacygate in the table of payment gateways.
 
 Clicking the Manage button on the right hand side will take you into the settings page, where you can configure the plugin for your store.
 
-**Note: If you are running version of WooCommerce older than 3.4.x your Coinbase Commerce tab will be underneath the WooCommerce > Settings > Checkout tab**
+**Note: If you are running version of WooCommerce older than 3.4.x your PrivacyGate tab will be underneath the WooCommerce > Settings > Checkout tab**
 
 ## Settings
 
 ### Enable / Disable
 
-Turn the Coinbase Commerce payment method on / off for visitors at checkout.
+Turn the PrivacyGate payment method on / off for visitors at checkout.
 
 ### Title
 
@@ -55,17 +55,17 @@ Description of the payment method on the checkout page
 
 ### API Key
 
-Your Coinbase Commerce API key. Available within the [Coinbase Commerce settings page].
+Your PrivacyGate API key. Available within the [PrivacyGate settings page].
 
-Using an API key allows your website to periodically check Coinbase Commerce for payment confirmation.
+Using an API key allows your website to periodically check PrivacyGate for payment confirmation.
 
 ### Webhook Shared Secret
 
-Your webhook shared secret. Available within the [Coinbase Commerce settings page].
+Your webhook shared secret. Available within the [PrivacyGate settings page].
 
-Using webhooks allows Coinbase Commerce to send payment confirmation messages to the website. To fill this out:
+Using webhooks allows PrivacyGate to send payment confirmation messages to the website. To fill this out:
 
-1. In your Coinbase Commerce settings page, scroll to the 'Webhook subscriptions' section
+1. In your PrivacyGate settings page, scroll to the 'Webhook subscriptions' section
 2. Click 'Add an endpoint' and paste the URL from within your settings page.
 3. Make sure to select "Send me all events", to receive all payment updates.
 4. Click "Show shared secret" and paste into the box within your settings page.
@@ -74,7 +74,7 @@ Using webhooks allows Coinbase Commerce to send payment confirmation messages to
 
 Whether or not to store debug logs.
 
-If this is checked, these are saved within your `wp-content/uploads/wc-logs/` folder in a .log file prefixed with `coinbase-`
+If this is checked, these are saved within your `wp-content/uploads/wc-logs/` folder in a .log file prefixed with `privacygate-`
 
 ## Prerequisites
 
@@ -87,11 +87,11 @@ To use this plugin with your WooCommerce store you will need:
 
 **What cryptocurrencies does the plugin support?**
 
-The plugin supports all cryptocurrencies available at [Coinbase Commerce]
+The plugin supports all cryptocurrencies available at [PrivacyGate]
 
-**Does Coinbase Commerce have integrations with other commerce platforms?**
+**Does PrivacyGate have integrations with other commerce platforms?**
 
-Yes, the list of all integrations can be found here: [Coinbase Commerce Integrations](https://commerce.coinbase.com/integrate).
+Yes, the list of all integrations can be found here: [PrivacyGate Integrations](https://privacygate.io/integrate).
 
 ## License
 
@@ -106,7 +106,7 @@ This project is licensed under the Apache 2.0 License
 * Added support for charge cancel url.
 * Handle cancelled events from API.
 * Add option to disable icons on checkout page.
-* Add Coinbase Commerce transaction ID to WooCommerce order output (Admin order page, Customer order page, email confirmation).
+* Add PrivacyGate transaction ID to WooCommerce order output (Admin order page, Customer order page, email confirmation).
 * Updated README.md
 
 ## 1.0.2 ##
@@ -116,15 +116,15 @@ This project is licensed under the Apache 2.0 License
 * Tested against WordPress 4.9.7
 * Tested against WooCommerce 3.4.3
 * Updated README.md
-* Updated plugin meta in coinbase-commerce.php
+* Updated plugin meta in privacygate.php
 
 ## 1.0.0 ##
-* Coinbase Commerce
+* PrivacyGate
 
 [//]: # (Comments for storing reference material in. Stripped out when processing the markdown)
 
-[Coinbase Commerce]: <https://commerce.coinbase.com/>
-[Coinbase Commerce settings page]: <https://commerce.coinbase.com/dashboard/settings/>
+[PrivacyGate]: <https://privacygate.io/>
+[PrivacyGate settings page]: <https://dash.privacygate.io/settings>
 [WooCommerce]: <https://woocommerce.com/>
 [WordPress]: <https://wordpress.org/>
-[WordPress.org plugin repository]: <https://wordpress.org/plugins/coinbase-commerce/>
+[WordPress.org plugin repository]: <https://wordpress.org/plugins/privacygate/>

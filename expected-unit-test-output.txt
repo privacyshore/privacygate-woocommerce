@@ -10,7 +10,7 @@ Not running external-http tests. To execute these, use --group external-http.
 PHPUnit 6.5.8 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.14
-Configuration: /Users/edd/Apollo/sites/coinbase-commerce.prag/wp-content/plugins/coinbase-commerce/phpunit.xml
+Configuration: /Users/edd/Apollo/sites/privacygate.prag/wp-content/plugins/privacygate/phpunit.xml
 
 ....                                                                4 / 4 (100%)
 
